@@ -1,0 +1,985 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Nursing Theory — Grand, Middle-Range, and Practice-Level Theories</title>
+<meta name="description" content="Nursing theory explained — explore grand theories, middle-range theories, and practice-level theories across every level of abstraction. Understand nursing conceptual frameworks, metaparadigms, and theoretical models.">
+<meta name="keywords" content="nursing theory, nursing theory generator, grand theory, middle-range theory, practice theory, metaparadigm, nursing conceptual framework, nursing philosophy, theoretical framework nursing, nursing models, Jean Watson, Dorothea Orem, Betty Neuman, nursing education, nursing research, levels of abstraction, nursing theory examples, types of nursing theories, nursing theory application">
+<meta name="author" content="The Nursing Theory Generator Project">
+<meta name="robots" content="index, follow">
+<link rel="canonical" href="https://nursing-theory.net/">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://nursing-theory.net/">
+<meta property="og:title" content="Nursing Theory — Grand, Middle-Range, and Practice-Level Theories">
+<meta property="og:description" content="Nursing theory explained — explore grand theories, middle-range theories, and practice-level theories across every level of abstraction.">
+<meta property="og:image" content="https://nursing-theory.net/og-image.svg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Nursing Theory — Grand, Middle-Range, and Practice-Level Theories">
+<meta name="twitter:description" content="Nursing theory explained — explore grand theories, middle-range theories, and practice-level theories across every level of abstraction.">
+<meta name="twitter:image" content="https://nursing-theory.net/og-image.svg">
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "WebApplication",
+  "name": "The Nursing Theory Generator",
+  "url": "https://nursing-theory.net",
+  "description": "Explore nursing theories across every level of abstraction.",
+  "applicationCategory": "EducationalApplication",
+  "operatingSystem": "Any",
+  "offers": {
+    "@type": "Offer",
+    "price": "0",
+    "priceCurrency": "USD"
+  }
+}
+</script>
+<link rel="icon" href="favicon.svg" type="image/svg+xml">
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;1,400&family=Source+Sans+3:wght@300;400;500;600&family=Source+Serif+4:ital,wght@0,400;0,600;1,400&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+<style>
+:root {
+  --bg: #FAF8F5;
+  --surface: #FFFFFF;
+  --surface2: #F3F0EB;
+  --border: #E0DAD0;
+  --text: #1C1917;
+  --text2: #57534E;
+  --text3: #A8A29E;
+  --accent: #7C2D12;
+  --accent-light: #FEF2E8;
+  --gold: #92400E;
+  --gold-light: #FEF3C7;
+  --teal: #115E59;
+  --teal-light: #ECFDF5;
+  --purple: #581C87;
+  --purple-light: #FAF5FF;
+  --serif: 'Playfair Display', Georgia, serif;
+  --sans: 'Source Sans 3', -apple-system, sans-serif;
+  --body-serif: 'Source Serif 4', Georgia, serif;
+  --mono: 'JetBrains Mono', monospace;
+  --radius: 6px;
+}
+* { box-sizing: border-box; margin: 0; padding: 0; }
+body { font-family: var(--sans); background: var(--bg); color: var(--text); font-size: 16px; line-height: 1.6; min-height: 100vh; }
+
+/* Header */
+header {
+  text-align: center; padding: 60px 24px 40px;
+  background: linear-gradient(180deg, #1C1917 0%, #292524 100%);
+  color: #fff;
+}
+header h1 { font-family: var(--serif); font-size: clamp(28px, 5vw, 48px); font-weight: 700; letter-spacing: -0.02em; margin-bottom: 8px; }
+header h1 em { font-style: italic; color: #FBBF24; }
+header p { font-size: 15px; color: #A8A29E; max-width: 520px; margin: 0 auto 32px; line-height: 1.6; }
+header .disclaimer {
+  display: inline-block; font-family: var(--mono); font-size: 10px; color: #78716C;
+  background: rgba(255,255,255,0.06); padding: 4px 14px; border-radius: 20px;
+  letter-spacing: 0.06em; text-transform: uppercase; margin-top: 8px;
+}
+
+/* Theory type selector */
+.selector { display: flex; justify-content: center; gap: 12px; margin-top: 0; padding: 0 20px; flex-wrap: wrap; }
+.type-btn {
+  padding: 14px 28px; border: 2px solid var(--border); border-radius: 8px;
+  background: var(--surface); font-family: var(--sans); font-size: 14px; font-weight: 600;
+  cursor: pointer; transition: all 0.2s; color: var(--text); min-width: 200px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.06);
+}
+.type-btn:hover { border-color: var(--accent); color: var(--accent); transform: translateY(-2px); box-shadow: 0 4px 16px rgba(0,0,0,0.1); }
+.type-btn .type-label { font-family: var(--serif); font-size: 17px; display: block; margin-bottom: 4px; }
+.type-btn .type-desc { font-size: 11px; color: var(--text3); font-weight: 400; display: block; }
+.type-btn.grand { border-left: 4px solid var(--accent); }
+.type-btn.middle { border-left: 4px solid var(--teal); }
+.type-btn.practice { border-left: 4px solid var(--purple); }
+.type-btn.grand:hover { background: var(--accent-light); border-color: var(--accent); }
+.type-btn.middle:hover { background: var(--teal-light); border-color: var(--teal); }
+.type-btn.practice:hover { background: var(--purple-light); border-color: var(--purple); }
+.type-btn.random { border-left: 4px solid var(--gold); }
+.type-btn.random:hover { background: var(--gold-light); border-color: var(--gold); }
+
+/* About section */
+.about-section {
+  max-width: 680px; margin: 32px auto 40px; padding: 0 20px;
+}
+.about-toggle {
+  display: flex; align-items: center; justify-content: center; gap: 8px;
+  font-family: var(--sans); font-size: 14px; font-weight: 500;
+  color: var(--text2); cursor: pointer;
+  background: var(--surface); border: 1px solid var(--border); border-radius: 8px;
+  padding: 10px 24px; margin: 0 auto;
+  transition: all 0.2s; box-shadow: 0 2px 8px rgba(0,0,0,0.06);
+}
+.about-toggle:hover { color: var(--text); border-color: var(--text); background: var(--surface2); }
+.about-toggle .arrow { transition: transform 0.2s; display: inline-block; }
+.about-toggle .arrow.open { transform: rotate(180deg); }
+.about-content {
+  display: none; margin-top: 16px; padding: 28px 32px;
+  background: var(--surface); border: 1px solid var(--border); border-radius: 10px;
+  box-shadow: 0 2px 12px rgba(0,0,0,0.06);
+}
+.about-content.visible { display: block; }
+.about-content h3 {
+  font-family: var(--serif); font-size: 20px; font-weight: 700;
+  margin-bottom: 16px; color: var(--text);
+}
+.about-content p {
+  font-family: var(--body-serif); font-size: 15px; line-height: 1.85;
+  color: var(--text2); margin-bottom: 14px;
+}
+.about-content p:last-child { margin-bottom: 0; }
+.about-content em { color: var(--text); font-style: italic; }
+
+/* Main */
+main { max-width: 800px; margin: 40px auto; padding: 0 20px 60px; }
+#output { display: none; }
+#output.visible { display: block; }
+
+/* Theory card */
+.theory-card {
+  background: var(--surface); border: 1px solid var(--border); border-radius: 10px;
+  padding: 0; overflow: hidden; box-shadow: 0 2px 12px rgba(0,0,0,0.06);
+}
+.theory-header {
+  padding: 32px 36px 24px; border-bottom: 1px solid var(--border);
+  background: linear-gradient(135deg, #FEFCE8 0%, #FEF9EE 100%);
+}
+.theory-header .theory-type-badge {
+  font-family: var(--mono); font-size: 10px; letter-spacing: 0.08em;
+  text-transform: uppercase; padding: 3px 10px; border-radius: 3px;
+  display: inline-block; margin-bottom: 12px; font-weight: 500;
+}
+.badge-grand { background: var(--accent-light); color: var(--accent); }
+.badge-middle { background: var(--teal-light); color: var(--teal); }
+.badge-practice { background: var(--purple-light); color: var(--purple); }
+.theory-header h2 { font-family: var(--serif); font-size: 26px; font-weight: 700; margin-bottom: 4px; letter-spacing: -0.01em; }
+.theory-header .theorist { font-family: var(--body-serif); font-size: 15px; color: var(--text2); font-style: italic; }
+.theory-header .year { font-family: var(--mono); font-size: 12px; color: var(--text3); margin-left: 8px; }
+
+.theory-body { padding: 32px 36px; }
+
+.section { margin-bottom: 28px; }
+.section:last-child { margin-bottom: 0; }
+.section h3 {
+  font-family: var(--sans); font-size: 11px; font-weight: 600;
+  text-transform: uppercase; letter-spacing: 0.08em; color: var(--text3);
+  margin-bottom: 12px; padding-bottom: 6px; border-bottom: 1px solid var(--border);
+}
+.section p, .section li {
+  font-family: var(--body-serif); font-size: 15px; line-height: 1.8; color: var(--text);
+}
+.section ul { padding-left: 20px; }
+.section li { margin-bottom: 6px; }
+
+.concept-grid {
+  display: grid; grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  gap: 10px; margin-top: 8px;
+}
+.concept-card {
+  background: var(--surface2); border-radius: 6px; padding: 12px 14px;
+  border-left: 3px solid var(--gold);
+}
+.concept-card .concept-name {
+  font-family: var(--serif); font-size: 14px; font-weight: 700;
+  color: var(--gold); margin-bottom: 4px;
+}
+.concept-card .concept-def {
+  font-family: var(--body-serif); font-size: 13px; color: var(--text2); line-height: 1.6;
+}
+
+.citation {
+  font-family: var(--body-serif); font-size: 13px; color: var(--text2);
+  line-height: 1.7; padding-left: 2em; text-indent: -2em; margin-bottom: 6px;
+}
+
+.diagram-box {
+  background: var(--surface2); border: 1px dashed var(--border);
+  border-radius: 6px; padding: 20px; text-align: center; margin-top: 12px;
+  font-family: var(--mono); font-size: 13px; color: var(--text2); line-height: 2;
+}
+
+/* Actions bar */
+.actions {
+  display: flex; gap: 10px; justify-content: center; margin-top: 24px; flex-wrap: wrap;
+}
+.action-btn {
+  padding: 10px 20px; border: 1px solid var(--border); border-radius: 6px;
+  background: var(--surface); font-family: var(--sans); font-size: 13px;
+  font-weight: 500; cursor: pointer; color: var(--text2); transition: all 0.15s;
+  display: flex; align-items: center; gap: 6px;
+}
+.action-btn:hover { border-color: var(--text); color: var(--text); background: var(--surface2); }
+.action-btn.primary { background: var(--text); color: #fff; border-color: var(--text); }
+.action-btn.primary:hover { background: #292524; }
+
+/* Regenerate */
+.regen-hint {
+  text-align: center; margin-top: 16px;
+  font-family: var(--mono); font-size: 11px; color: var(--text3);
+}
+
+/* Footer */
+footer {
+  text-align: center; padding: 40px 20px; font-size: 12px; color: var(--text3);
+  border-top: 1px solid var(--border); margin-top: 40px;
+}
+footer a { color: var(--text2); }
+
+/* Counter */
+.counter {
+  text-align: center; margin-top: 16px;
+  font-family: var(--mono); font-size: 12px; color: var(--text3);
+}
+.counter span { color: var(--text2); font-weight: 500; }
+
+/* Mobile */
+@media (max-width: 600px) {
+  header { padding: 40px 16px 32px; }
+  .selector { flex-direction: column; align-items: center; }
+  .type-btn { width: 100%; max-width: 300px; }
+  .theory-header, .theory-body { padding: 24px 20px; }
+  .concept-grid { grid-template-columns: 1fr; }
+  .about-content { padding: 20px 18px; }
+  .about-content h3 { font-size: 18px; }
+  .about-content p { font-size: 14px; }
+  .about-content ol { font-size: 12px; }
+  .actions { flex-direction: column; align-items: center; }
+  .action-btn { width: 100%; max-width: 280px; justify-content: center; }
+}
+
+/* Print */
+@media print {
+  body { background: #fff; }
+  header, .selector, .actions, .regen-hint, footer, .disclaimer, .counter, .about-toggle, .about-section, #keyword-input { display: none !important; }
+  .theory-card { box-shadow: none; border: none; }
+  .theory-header { background: none; }
+  main { margin: 0; padding: 0; max-width: 100%; }
+  body.print-about header, body.print-about .selector, body.print-about main, body.print-about footer, body.print-about .counter, body.print-about #keyword-input { display: none !important; }
+  body.print-about .about-section { display: block !important; margin: 0; padding: 0; }
+  body.print-about .about-content { display: block !important; box-shadow: none; border: none; padding: 0; }
+  body.print-about .about-toggle { display: none !important; }
+}
+</style>
+</head>
+<body>
+
+<header>
+  <h1>The Nursing <em>Theory</em> Generator <span style="font-family:var(--body-serif);font-size:14px;font-weight:400;font-style:italic;color:#A8A29E;margin-left:4px">a project</span></h1>
+  <p style="max-width:580px;margin:0 auto 16px;font-family:'Source Serif 4',Georgia,serif;font-size:16px;color:#D6D3D1;line-height:1.8;font-style:italic">"We took a practice built on observation, skill, and compassion — and buried it under jargon."</p>
+  <p data-nosnippet style="max-width:540px;margin:0 auto 24px;font-size:14px;color:#A8A29E;line-height:1.7">This generator exists to make you laugh — and to make a point. Every theory below is fake, generated in milliseconds by an algorithm with no nursing education whatsoever. If you can't tell the difference, that <em>is</em> the point. Nursing theory wraps simple ideas in impenetrable jargon, mistakes complexity for depth, and asks us to nod along. We built this to show how easy it is to sound profound when no one is expected to understand you in the first place.</p>
+  <div class="disclaimer" data-nosnippet>A parody &middot; For humor &amp; reflection</div>
+  <div style="max-width:500px;margin:16px auto 0;padding:10px 16px;background:rgba(255,255,255,0.06);border:1px solid rgba(255,255,255,0.1);border-radius:6px;font-size:11px;color:#78716C;line-height:1.6;text-align:left">
+    <strong style="color:#A8A29E">Disclaimer:</strong> All generated theories, theorist names, concepts, propositions, and references are entirely computer-generated nonsense. None of the cited authors, articles, or books in the generated theories are real. The endnotes in the "About this project" section reference real, published works. The generated theories are meant for entertainment purposes and to make a point, but are not intended as academic or clinical guidance.
+  </div>
+</header>
+
+<div class="about-section">
+  <button class="about-toggle" onclick="toggleAbout()">
+    About this project <span class="arrow" id="about-arrow">&#9660;</span>
+  </button>
+  <div class="about-content" id="about-content">
+    <h3>Why This Exists</h3>
+    <p>Nursing theory is written in ivory towers and it stays there. It never reaches the nurses on the wards or the nurse practitioners in the clinics. The language is impenetrable, the concepts are untethered from clinical reality, and none of us ever signed onto any of it &mdash; yet somehow, here we are, expected to treat it as the intellectual foundation of our profession.</p>
+    <p>No one voted on &ldquo;pandimensional unitary human becoming.&rdquo; No bedside nurse signed on to &ldquo;emancipatory praxis,&rdquo; &ldquo;cosmic love,&rdquo; or &ldquo;the dialectic of transpersonal caring consciousness.&rdquo; These frameworks were imposed from the top of academia, and they have done more to alienate practicing nurses from their own discipline than to advance patient care. This project aims to highlight the absurdity of where nursing theory has taken us. An algorithm with zero nursing education can generate theories that are nearly indistinguishable from the real thing (with some humor injected) &mdash; and if that doesn&rsquo;t give us pause, nothing will. The hope is that by making the emperor&rsquo;s new clothes obvious enough, we might steer the discipline back toward <em>objective reality</em> &mdash; or as one in academia would call it, &ldquo;microfascism&rdquo; <sup>(1)</sup>.</p>
+    <p style="margin-top:20px">Not all nursing theory is the problem. Frameworks like Benner&rsquo;s novice-to-expert model have genuine clinical utility &mdash; they describe something real and practitioners recognize it. The problem is the discipline&rsquo;s drift toward theories that no longer even attempt to describe reality, and toward a postmodern philosophy that rejects objectivity altogether. When nothing can be proven wrong, nothing needs to be proven right &mdash; and in a clinical discipline where lives depend on things being demonstrably true, that isn&rsquo;t just an academic preference. It could be dangerous.</p>
+    <p style="margin-top:20px">Hopefully, we can find our way back. A good start would be to return to the kind of peer review practiced across the hard sciences &mdash; where reviewers ask whether claims are falsifiable, empirically supported, and logically coherent <sup>(2)</sup>. Instead, nursing has drifted toward a culture where critical feedback is treated as something to be managed rather than welcomed <sup>(3)</sup>. If a theory or a paper can&rsquo;t survive honest scrutiny, that&rsquo;s a problem with the theory or the paper, not the feedback. The same applies to how we evaluate theory itself &mdash; logic, testability, and empirical adequacy should be the bar, not the postmodern approach advocated in Smith and Liehr&rsquo;s <em>Middle Range Theory for Nursing</em> <sup>(4)</sup>, where evaluation is framed as &ldquo;always tentative&rdquo; and context renders every critique negotiable. When the framework for judging a theory is designed so that no theory can ever really fail, we haven&rsquo;t raised the bar &mdash; we&rsquo;ve removed it.</p>
+    <p style="margin-top:20px">The predictable response to a project like this is that we simply don&rsquo;t understand theory &mdash; that we haven&rsquo;t engaged deeply enough with the literature. But this generator doesn&rsquo;t misunderstand nursing theory &mdash; it nearly replicates it. And this isn&rsquo;t artificial intelligence &mdash; it&rsquo;s a random number generator picking words from a list and dropping them into sentence templates. It has no understanding of what it&rsquo;s producing. A tool this simple couldn&rsquo;t fake a chemistry paper or a legal brief, because in those fields the language actually has to mean something. Draw your own conclusions about what it means that it works here.</p>
+    <div style="margin-top:24px;padding-top:16px;border-top:1px solid var(--border)">
+      <h4 style="font-family:var(--sans);font-size:11px;font-weight:600;text-transform:uppercase;letter-spacing:0.08em;color:var(--text3);margin-bottom:12px">Endnotes</h4>
+      <ol style="font-family:var(--body-serif);font-size:13px;color:var(--text2);line-height:1.7;padding-left:20px">
+        <li style="margin-bottom:6px">Holmes, D., Murray, S. J., Perron, A., &amp; Rail, G. (2006). Deconstructing the evidence-based discourse in health sciences: Truth, power and fascism. <em>International Journal of Evidence-Based Healthcare, 4</em>(3), 180&ndash;186.</li>
+        <li style="margin-bottom:6px">Silva, M. C. (1986). Research testing nursing theory: State of the art. <em>Advances in Nursing Science, 9</em>(1), 1&ndash;11.</li>
+        <li style="margin-bottom:6px">Heinrich, K. T. (2014). How to prevent feedback fallout. <em>Nurse Author &amp; Editor, 24</em>(1), 1&ndash;6.</li>
+        <li style="margin-bottom:6px">Smith, M. J., &amp; Liehr, P. R. (Eds.). <em>Middle Range Theory for Nursing</em>. Springer.</li>
+      </ol>
+    </div>
+    <div style="margin-top:16px;text-align:right">
+      <button class="action-btn" onclick="printAbout()" style="display:inline-flex;font-size:12px;padding:6px 14px">&#128424; Print this section</button>
+    </div>
+  </div>
+</div>
+
+<div style="text-align:center;margin:24px auto 16px;font-family:var(--sans);font-size:14px;color:var(--text2)">Choose a type below to generate a nursing theory</div>
+
+<div class="selector">
+  <button class="type-btn grand" onclick="generate('grand')">
+    <span class="type-label">Grand Theory</span>
+    <span class="type-desc">Abstract, philosophical, all-encompassing</span>
+  </button>
+  <button class="type-btn middle" onclick="showKeywordInput('middle')">
+    <span class="type-label">Middle-Range Theory</span>
+    <span class="type-desc">Testable, focused, conceptually bounded</span>
+  </button>
+  <button class="type-btn practice" onclick="showKeywordInput('practice')">
+    <span class="type-label">Practice Theory</span>
+    <span class="type-desc">Prescriptive, situation-specific, action-oriented</span>
+  </button>
+  <button class="type-btn random" onclick="generateRandom()">
+    <span class="type-label">Surprise Me</span>
+    <span class="type-desc">Random type, random topic</span>
+  </button>
+</div>
+
+<div class="counter"><span id="theory-count">0</span> theories generated</div>
+
+<div id="keyword-input" style="display:none;max-width:500px;margin:20px auto 0;padding:0 20px">
+  <div style="background:var(--surface);border:1px solid var(--border);border-radius:8px;padding:20px 24px;box-shadow:0 2px 8px rgba(0,0,0,0.06)">
+    <label style="font-family:var(--sans);font-size:13px;font-weight:600;color:var(--text2);display:block;margin-bottom:8px" id="keyword-label">What should this theory be about?</label>
+    <input type="text" id="keyword-field" placeholder="e.g. wound care, nurse burnout, patient falls, diabetes..." style="width:100%;padding:10px 14px;font-family:var(--sans);font-size:15px;border:1px solid var(--border);border-radius:6px;color:var(--text);outline:none;background:var(--surface2)" onkeydown="if(event.key==='Enter')generateWithKeyword()">
+    <p style="font-size:11px;color:var(--text3);margin-top:6px">Enter a topic, or leave blank for a random one</p>
+    <div style="display:flex;gap:8px;margin-top:12px;justify-content:flex-end">
+      <button onclick="hideKeywordInput()" style="padding:8px 16px;border:1px solid var(--border);border-radius:6px;background:none;font-family:var(--sans);font-size:13px;color:var(--text2);cursor:pointer">Cancel</button>
+      <button onclick="generateWithKeyword()" style="padding:8px 20px;border:none;border-radius:6px;background:var(--text);color:#fff;font-family:var(--sans);font-size:13px;font-weight:600;cursor:pointer">Generate</button>
+    </div>
+  </div>
+</div>
+
+<main>
+  <div id="output"></div>
+</main>
+
+<div class="about-section" style="margin-top:40px;margin-bottom:0">
+  <button class="about-toggle" onclick="toggleHowItWorks()">
+    How it works <span class="arrow" id="how-arrow">&#9660;</span>
+  </button>
+  <div class="about-content" id="how-content">
+    <h3>Under the Hood</h3>
+    <p>There is no artificial intelligence behind this site. No language model, no machine learning, no neural network. The entire generator runs on <code style="font-family:var(--mono);font-size:13px;background:var(--surface2);padding:2px 6px;border-radius:3px">Math.random()</code> &mdash; JavaScript&rsquo;s built-in random number generator.</p>
+    <p>Here&rsquo;s how it works: the site contains arrays of words &mdash; adjectives like &ldquo;pandimensional&rdquo; and &ldquo;transpersonal,&rdquo; nouns like &ldquo;cosmic love&rdquo; and &ldquo;resonancy,&rdquo; processes like &ldquo;languaging&rdquo; and &ldquo;cotranscending.&rdquo; When you click a button, the generator randomly selects words from these lists and drops them into sentence templates. That&rsquo;s it.</p>
+    <p>There is no understanding of what the words mean. There is no logic connecting one concept to another. The propositions don&rsquo;t follow from the assumptions. The references are randomly assembled from fake author names and fake journal titles. The entire output is structurally coherent but semantically empty &mdash; some absurdity added for hysterics and effect, but you get the <em>point</em>.</p>
+    <p>The question this raises is simple: if a tool this primitive can produce output that reads like nursing theory, what does that tell us about the language of nursing theory?</p>
+  </div>
+</div>
+
+<footer>
+  <p style="font-family:var(--body-serif);font-size:15px;font-style:italic;color:var(--text2);max-width:520px;margin:0 auto 16px;line-height:1.8">"If a discipline's greatest achievement is that no one can understand what it's saying, perhaps the language was never meant to clarify — only to impress."</p>
+  <p>No actual nursing knowledge was harmed in the making of this generator.</p>
+  <p style="margin-top:8px;max-width:560px;margin-left:auto;margin-right:auto;font-size:11px;color:var(--text3);line-height:1.6">All generated theories, theorist names, concepts, propositions, and references are entirely fictional and computer-generated. Any resemblance to real persons, published works, or existing nursing theories is purely coincidental and unintentional. Endnotes in the "About this project" section reference real, published works.</p>
+  <p style="margin-top:12px;font-size:11px;color:var(--text3)">&copy; 2026 The Nursing Theory Generator Project. All rights reserved.</p>
+</footer>
+
+<script>
+function toggleAbout() {
+  var content = document.getElementById('about-content');
+  var arrow = document.getElementById('about-arrow');
+  content.classList.toggle('visible');
+  arrow.classList.toggle('open');
+}
+
+function printAbout() {
+  document.body.classList.add('print-about');
+  window.print();
+  document.body.classList.remove('print-about');
+}
+
+function toggleHowItWorks() {
+  var content = document.getElementById('how-content');
+  var arrow = document.getElementById('how-arrow');
+  content.classList.toggle('visible');
+  arrow.classList.toggle('open');
+}
+
+function generateRandom() {
+  var types = ['grand', 'middle', 'practice'];
+  generate(pick(types));
+}
+
+var _pendingType = null;
+function showKeywordInput(type) {
+  _pendingType = type;
+  var label = type === 'middle' ? 'What should this middle-range theory be about?' : 'What should this practice theory address?';
+  document.getElementById('keyword-label').textContent = label;
+  document.getElementById('keyword-field').value = '';
+  document.getElementById('keyword-input').style.display = 'block';
+  document.getElementById('keyword-field').focus();
+}
+function hideKeywordInput() { document.getElementById('keyword-input').style.display = 'none'; _pendingType = null; }
+function generateWithKeyword() {
+  var keyword = document.getElementById('keyword-field').value.trim();
+  hideKeywordInput();
+  generate(_pendingType, keyword || null);
+}
+
+// ── WORD BANKS ──────────────────────────────────────────────────────────────
+
+const firstNames = ['Margaret','Florence','Dorothea','Hildegard','Virginia','Callista','Jean','Martha','Imogene','Betty','Nola','Madeleine','Rosemarie','Katharine','Patricia','Helen','Lydia','Ernestine','Josephine','Myra','Ramona','Evelyn','Afaf','Merle','Cheryl','Kristen','Marlaine','Savina','Hesook','Pamela','Jacqueline','Barbara'];
+const lastNames = ['Henderson','Nightingale','Orem','Peplau','Roy','Watson','Rogers','King','Neuman','Leininger','Parse','Kolcaba','Boykin','Benner','Swanson','Erickson','Levine','Wiedenbach','Hall','Mercer','Pender','Beck','Meleis','Mishel','Tatano-Beck','Eriksson','Smith','Schoenhofer','Kim','Reed','Fawcett','Carper'];
+const adjectives = ['Transcendent','Holistic','Dialectical','Reciprocal','Synergistic','Transformative','Emanating','Emergent','Ontological','Unitary','Rhythmical','Pandimensional','Interpenetrating','Resonating','Axiological','Praxiological','Hermeneutic','Phenomenological','Teleological','Emancipatory','Transpersonal','Humanistic','Existential','Epistemological','Contextual','Relational','Dynamic','Recursive','Autopoietic','Enfolding','Decolonized','Anti-Oppressive','Intersectional','Liberatory','Counter-Hegemonic','Post-Colonial','Indigenist','Critically-Conscious','Socially-Just','Equity-Centered','Culturally-Sustaining','Power-Disrupting','Structurally-Aware','Radically-Inclusive','Centering-Marginalized','Postmodern','Post-Structural','Deconstructed','Rhizomatic','Relativist','Anti-Foundational','Discursively-Constituted','Socially-Constructed','Pluriversal','Non-Binary','Multiply-Situated','Perspectival','Intertextual','Hyperreal','Simulacral','Fragmented','Liminal','Nomadic','Performative','Caritative','Unitary-Transformative','Co-Constituted','Simultaneity-Based','Acausal','Cosmic','Supra-Personal','Vibrational','Trauma-Informed','Privilege-Aware','Cis-Normative-Disrupting','Settler-Colonial-Aware','Whiteness-Interrogating','Heteronormative-Disrupting','Patriarchy-Dismantling','Queered','Neurodivergent-Affirming','Fat-Liberating','Ability-Centering','Anti-Capitalist','Harm-Reductive','Reparative','Abolitionist','Transformative-Justice-Oriented','Consent-Centered','Body-Sovereign','Healing-Justice-Informed','Spiritually-Integrated','Ancestrally-Grounded','Land-Based','Ceremony-Informed','Somatic','Energy-Attuned','Frequency-Aligned','Vibrationally-Coherent','Quantum-Informed','Trauma-Informed','Genocide-Aware','Trauma-Responsive','Trauma-Centered','Trauma-Sensitive','Historically-Traumatized','Collective-Trauma-Informed','Intergenerationally-Trauma-Aware','Structurally-Traumatized','Genocide-Informed','Vicarious-Trauma-Aware'];
+const nouns = ['Caring','Becoming','Being','Presence','Intentionality','Connectedness','Embodiment','Personhood','Wholeness','Consciousness','Meaning','Transcendence','Vulnerability','Resilience','Self-Organization','Harmony','Energy','Patterning','Wellbeing','Authenticity','Mutuality','Suffering','Hope','Comfort','Empowerment','Agency','Praxis','Attunement','Flourishing','Emergence','Decolonization','Epistemic Justice','Structural Humility','Radical Presence','Anti-Racism','Health Equity','Cultural Safety','Collective Liberation','Power Redistribution','Allyship','Positionality','Dismantling','Centering','Reclamation','Indigenous Knowing','Subjectivity','Discourse','Deconstruction','Alterity','Différance','Simulacrum','Multiplicity','Performativity','Contingency','Hyperreality','Anti-Essentialism','Liminality','Radical Uncertainty','Plurality of Truths','Cosmic Love','Carative Factors','Helicy','Integrality','Resonancy','Human Becoming','Eudaimonic Well-Being','Enfoldment','Cocreation','Moral Reckoning','Unitary Consciousness','Pattern of the Whole','Centering Force','Life-Death-Life Rhythm','Lingering Presence','White Fragility','Settler Complicity','Epistemic Violence','Privilege','Systemic Oppression','Microaggression Awareness','Safe Spaces','Brave Spaces','Emotional Labor','Lived Expertise','Centering Joy','Radical Softness','Holding Space','Collective Grief','Intergenerational Trauma','Ancestral Healing','Somatic Release','Energetic Boundaries','Vibrational Medicine','Quantum Healing','Chakra Alignment','Crystal Energy','Sound Healing','Sacred Geometry','Land Acknowledgement','Ceremony','Smudging Protocol','Drum Circle Praxis','Breathwork','Moon Wisdom','Genocide Awareness','Genocidal Remembrance','Collective Trauma','Historical Trauma','Vicarious Trauma','Trauma Response','Trauma-Informed Care','Moral Distress','Moral Injury','Secondary Traumatic Stress','Compassion Fatigue','Racial Trauma','Systemic Trauma','Epigenetic Trauma','Transgenerational Grief'];
+const processes = ['unfolding','co-creating','pattern-manifesting','meaning-making','becoming','transcending','transforming','evolving','attuning','integrating','harmonizing','individuating','actualizing','navigating','illuminating','synthesizing','embodying','contextualizing','deconstructing','reconceptualizing','recontextualizing','dwelling-with','presencing','journeying-toward','reflecting-upon','spiraling-through','decolonizing','dismantling-hegemony','centering-marginalized-voices','interrogating-positionality','redistributing-epistemic-power','unsettling-dominant-narratives','honoring-indigenous-ways-of-knowing','disrupting-colonial-frameworks','liberating-oppressed-knowledges','co-conspiring-toward-justice','destabilizing-fixed-meanings','problematizing-objectivity','rejecting-grand-narratives','embracing-radical-contingency','performing-identity-through-discourse','decentering-the-knowing-subject','resisting-totalizing-frameworks','proliferating-subjugated-discourses','troubling-the-evidence-hierarchy','powering','originating','languaging','imaging','valuing','cotranscending','rhythmically-cocreating','dwelling-in-meaning','checking-privilege','sitting-with-discomfort','leaning-into-vulnerability','holding-space-for-grief','amplifying-silenced-voices','doing-the-work','showing-up-authentically','unlearning','re-membering','truth-telling','bearing-witness','calling-in','calling-out','stepping-back','making-room','redistributing-emotional-labor','processing-intergenerational-trauma','clearing-ancestral-energy','aligning-chakras','attuning-vibrations','channeling-cosmic-love','opening-energy-pathways','grounding-through-ceremony','raising-consciousness','manifesting-healing-intention','reading-the-body-as-text','trauma-informed-presencing','processing-collective-genocide-memory','bearing-witness-to-historical-trauma','decolonizing-trauma-narratives','centering-trauma-in-clinical-encounter','acknowledging-genocidal-legacies','holding-space-for-racial-trauma','metabolizing-vicarious-trauma','integrating-epigenetic-trauma-awareness'];
+const domains = ['the lived experience of uncertainty','human-environment mutual process','the meaning of health within illness','transpersonal caring moments','the dialectic of suffering and hope','pattern recognition in human becoming','the ontology of nurse-patient encounter','self-transcendence in liminal spaces','the hermeneutic circle of care','relational being-in-the-world','the phenomenology of comfort','embodied knowing in practice','unitary appreciative inquiry','the praxis of emancipatory nursing','rhythmical correlates of well-being','the decolonization of nursing epistemology','dismantling whiteness in caring science','centering indigenous healing ontologies within Western practice','the intersectionality of oppression and embodied suffering','anti-racist praxis in the nurse-patient power dynamic','epistemic injustice in evidence hierarchies','structural violence as a determinant of unitary wellbeing','the reclamation of subjugated knowledges in clinical encounter','the collapse of objective truth in clinical epistemology','nursing knowledge as socially constructed discourse','the rejection of positivist hegemony in health sciences','multiple co-existing realities of the illness experience','the instability of diagnostic categories as language games','the performativity of the nursing identity','power-knowledge regimes in evidence-based practice','the simulacrum of patient-centered care','radical subjectivity as the only authentic knowing','the impossibility of value-neutral clinical judgment','the vibrational frequency of nurse-patient resonance','cosmic love as a determinant of healing outcomes','the quantum entanglement of caregiver and care-receiver','chakra misalignment as a social determinant of health','ancestral trauma as embodied clinical knowledge','land acknowledgement as a prerequisite for therapeutic presence','the energetic boundaries of the caring encounter','sound bath as a modality of pandimensional healing','the colonization of indigenous healing practices by Western nursing','white supremacy culture in evidence-based practice','the weaponization of civility in peer review','microaggressions as barriers to unitary wellbeing','the emotional labor of allyship in clinical settings','privilege as an unexamined determinant of nursing knowledge','safe space creation as a nursing intervention','the centering of joy as resistance to structural oppression','the nursing response to genocide and collective trauma','trauma-informed approaches to the nurse-patient power dynamic','the epigenetics of historical trauma in clinical populations','genocide as a social determinant of intergenerational health','vicarious trauma as an occupational hazard of caring','trauma-informed pedagogy in nursing education','the moral injury of bearing witness to systemic violence'];
+const philosophies = ['Heideggerian phenomenology','Rogerian unitary science','Gadamerian hermeneutics','Husserlian intentionality','Whiteheadian process philosophy','Levinasian ethics of the Other','Merleau-Pontian embodiment','Ricoeurian narrative identity','Habermasian communicative action','Deleuzian rhizomatics','Hegelian dialectics','Buddhist non-dualism','Teilhardian cosmogenesis','Bergsonian durée','Buberian I-Thou relationality','Freirean critical pedagogy','Fanonian decolonial thought','Spivakian subaltern theory','Mohanty\'s transnational feminism','bell hooks\' engaged pedagogy','Tuhiwai Smith\'s decolonizing methodology','Santos\' epistemologies of the South','Quijano\'s coloniality of power','Anzaldúan borderlands epistemology','Lyotardian incredulity toward metanarratives','Derridean deconstruction','Foucauldian discourse analysis','Baudrillardian hyperreality','Rortyian neo-pragmatism','Barthesian death of the author','Lacanian psychoanalytic semiotics','Žižekian parallax ontology','Latourian actor-network theory','Haraway\'s situated knowledges','Barad\'s agential realism'];
+const journals = ['Advances in Nursing Science','Nursing Science Quarterly','Nursing Philosophy','Journal of Holistic Nursing','International Journal of Human Caring','Nursing Inquiry','Visions: The Journal of Rogerian Nursing Science','Qualitative Health Research','Journal of Transcultural Nursing','Scholarly Inquiry for Nursing Practice'];
+const settings = ['acute-care oncology units','community-dwelling elders','perioperative transitions','neonatal intensive care','palliative care encounters','chronic illness trajectories','perinatal loss experiences','mental health recovery journeys','pediatric chronic pain','post-transplant adaptation','primary care encounters','disaster response contexts','end-of-life care','immigrant health experiences','rural health disparities','sound bath therapy for acute pain management','sound bath facilitation for anxiety reduction','land acknowledgement integration in schools of nursing','vibrational frequency healing in postoperative recovery','crystal-mediated energy alignment in hospice care','smudging ceremonies in pre-surgical preparation','drum circle therapy for chronic pain','reiki-informed therapeutic touch in the ICU','aroma-vibrational attunement in labor and delivery','land acknowledgement as a healing intervention in clinical practice','singing bowl resonance therapy for pediatric anxiety','chakra realignment in post-anesthesia care units','moon cycle-informed medication scheduling','ancestral trauma clearing in emergency departments','forest bathing prescriptions for hypertension management','therapeutic sand play for nurse moral injury','mandala creation as wound care documentation','breathwork journeying for ventilator weaning','gratitude journaling as sepsis prevention','trauma-informed care in the emergency department','genocide education integration in nursing curricula','trauma-informed pain assessment','collective trauma processing in group therapy','historical trauma-informed discharge planning','genocide-aware cultural safety in maternal health','trauma-informed medication administration','vicarious trauma debriefing for ICU nurses'];
+const instruments = ['the Perceived Transcendence Scale (PTS-42)','the Holistic Comfort Questionnaire–Revised (HCQ-R)','the Unitary Wellbeing Index (UWI-III)','the Caring Behaviors Inventory–24 (CBI-24)','the Human Becoming Hermeneutic Method','the Rogerian Process of Inquiry','the Parse Research Method','Barrett\'s Power as Knowing Participation in Change Tool (PKPCT-VII)','the Mutual Exploration of Meaning Protocol (MEM-II)','the Dialectical Engagement Assessment (DEA-16)'];
+const metaparadigms = ['Person','Environment','Health','Nursing'];
+
+function pick(arr) { return arr[Math.floor(Math.random() * arr.length)]; }
+function pickN(arr, n) {
+  var shuffled = arr.slice().sort(() => Math.random() - 0.5);
+  return shuffled.slice(0, Math.min(n, arr.length));
+}
+function randYear(min, max) { return min + Math.floor(Math.random() * (max - min)); }
+function capitalize(s) { return s.charAt(0).toUpperCase() + s.slice(1); }
+
+// ── THEORY NAME GENERATORS ──────────────────────────────────────────────────
+
+function generateTheoryName() {
+  var patterns = [
+    () => 'The Theory of ' + pick(adjectives) + ' ' + pick(nouns),
+    () => pick(adjectives) + ' ' + pick(nouns) + ': A Theory of ' + pick(processes).split('-').map(capitalize).join('-'),
+    () => 'The ' + pick(nouns) + ' of ' + pick(adjectives) + ' ' + pick(processes).split('-').map(capitalize).join('-'),
+    () => pick(adjectives) + ' ' + pick(nouns) + ' Through ' + pick(adjectives) + ' ' + pick(nouns),
+    () => 'The ' + pick(adjectives) + ' Model of ' + pick(nouns) + ' and ' + pick(nouns),
+    () => pick(nouns) + ' as ' + pick(adjectives) + ' ' + capitalize(pick(processes)),
+  ];
+  return pick(patterns)();
+}
+
+function generateTheorist() {
+  return { first: pick(firstNames), last: pick(lastNames), credentials: pick(['PhD, RN, FAAN','DNSc, RN, FAAN','PhD, RN, AHN-BC, FAAN','PhD, RN, CNS, FAAN','EdD, RN, FAAN']) };
+}
+
+function generateYear(type) {
+  if (type === 'grand') return randYear(1965, 1998);
+  if (type === 'middle') return randYear(1988, 2018);
+  return randYear(2005, 2025);
+}
+
+// ── REAL CITATIONS ──────────────────────────────────────────────────────────
+
+// ── FAKE CITATION GENERATOR ──────────────────────────────────────────────────
+
+const citFirstNames = ['Agatha','Bernadette','Constance','Delphine','Edwina','Francesca','Gertrude','Harriet','Ingrid','Jolene','Katarina','Lucinda','Millicent','Nanette','Ophelia','Prudence','Rosalind','Sybil','Theodora','Ursula','Vivienne','Winifred','Yvette','Zelda','Adelaide','Beatrix','Cordelia','Dorothea','Eulalia','Genevieve'];
+const citLastNames = ['Thornbury','Ashworth','Bellingham','Cranmore','Dunleavy','Fairchild','Glenwood','Haversham','Inglesby','Jessup','Kenworthy','Landsborough','Montrose','Norbury','Osgood','Pemberton','Quinlan','Rutherford','Stalbridge','Trevithick','Underhill','Vanderlyn','Whitmore','Yardley','Blackwell','Chamberlain','Davenport','Ellsworth','Foxworth','Greenleaf'];
+const citInitials = ['A','B','C','D','E','F','G','H','I','J','K','L','M','N','O','P','R','S','T','V','W'];
+const fakeJournals = ['Advances in Nursing Science','Nursing Science Quarterly','Nursing Philosophy','Journal of Holistic Nursing','International Journal of Human Caring','Nursing Inquiry','Qualitative Health Research','Journal of Transcultural Nursing','Scholarly Inquiry for Nursing Practice','Journal of Nursing Scholarship','Research in Nursing & Health','Western Journal of Nursing Research','Journal of Advanced Nursing','Nursing Research','International Journal of Nursing Studies','Journal of Clinical Nursing','Nurse Education Today','Journal of Professional Nursing','Nursing Outlook','Nursing Ethics'];
+const fakePublishers = ['Sage Publications','Springer','Elsevier','Wiley','Jones & Bartlett','Routledge','F.A. Davis','Mosby','McGraw-Hill','Lippincott Williams & Wilkins','Prentice-Hall','National League for Nursing Press','University Press of Colorado','Oxford University Press','Cambridge University Press'];
+const bookTitleParts = [
+  ['Toward','Rethinking','Reconceptualizing','Advancing','Deconstructing','Envisioning','Illuminating','Reframing','Interrogating','Transforming'],
+  ['the Ontology of','the Praxis of','the Epistemology of','the Dialectics of','the Phenomenology of','Transpersonal','Unitary','Emancipatory','Holistic','Relational'],
+  ['Caring','Becoming','Nursing Knowledge','Health as Process','Human Wholeness','Clinical Encounter','Nursing Praxis','Healing Presence','Embodied Practice','the Nurse-Person Relationship']
+];
+const articleTitleParts = [
+  ['A critical analysis of','Toward a reconceptualization of','The lived experience of','Exploring the meaning of','Rethinking','The dialectic of','Deconstructing','Problematizing','An integrative review of','A hermeneutic inquiry into'],
+  ['transpersonal caring','unitary human becoming','relational ontology in nursing','embodied knowing','pattern recognition in practice','emancipatory praxis','self-transcendence','holistic comfort','meaning-making','epistemic humility'],
+  ['in clinical practice','within the discipline','across paradigms','in nursing education','among practicing nurses','in the postmodern era','through a critical lens','in acute care settings','in community contexts','in contemporary nursing']
+];
+
+function generateFakeAuthor() {
+  return pick(citLastNames) + ', ' + pick(citInitials) + '. ' + pick(citInitials) + '.';
+}
+
+function generateFakeAuthors() {
+  var n = Math.random() < 0.4 ? 1 : Math.random() < 0.6 ? 2 : 3;
+  var authors = [];
+  for (var i = 0; i < n; i++) {
+    authors.push(pick(citLastNames) + ', ' + pick(citInitials) + '. ' + pick(citInitials) + '.');
+  }
+  if (authors.length === 1) return authors[0];
+  if (authors.length === 2) return authors[0] + ' & ' + authors[1];
+  return authors.slice(0, -1).join(', ') + ', & ' + authors[authors.length - 1];
+}
+
+function generateFakeCitation() {
+  var year = randYear(1972, 2024);
+  var authors = generateFakeAuthors();
+
+  // 50/50 book vs journal article
+  if (Math.random() < 0.5) {
+    // Book
+    var title = pick(bookTitleParts[0]) + ' ' + pick(bookTitleParts[1]) + ' ' + pick(bookTitleParts[2]);
+    var edition = year > 2000 && Math.random() < 0.3 ? ' (' + pick(['2nd','3rd','4th','Rev.']) + ' ed.)' : '';
+    return authors + ' (' + year + '). <em>' + title + '</em>' + edition + '. ' + pick(fakePublishers) + '.';
+  } else {
+    // Journal article
+    var title = pick(articleTitleParts[0]) + ' ' + pick(articleTitleParts[1]) + ' ' + pick(articleTitleParts[2]);
+    var journal = pick(fakeJournals);
+    var vol = randYear(1, 68);
+    var issue = randYear(1, 4);
+    var startPage = randYear(1, 280);
+    var endPage = startPage + randYear(8, 22);
+    return authors + ' (' + year + '). ' + title + '. <em>' + journal + ', ' + vol + '</em>(' + issue + '), ' + startPage + '–' + endPage + '.';
+  }
+}
+
+function pickCitations(n) {
+  var citations = [];
+  for (var i = 0; i < n; i++) {
+    citations.push(generateFakeCitation());
+  }
+  // Sort by author last name for that authentic bibliography feel
+  citations.sort();
+  return citations;
+}
+
+// ── THEORY CONTENT GENERATORS ───────────────────────────────────────────────
+
+function generateGrandTheory() {
+  var theorist = generateTheorist();
+  var year = generateYear('grand');
+  var name = generateTheoryName();
+  var philosophy = pick(philosophies);
+  var concepts = pickN(nouns, 5);
+  var coreProcess = pick(processes);
+
+  var assumptionPool = [
+    'Human beings are irreducible, ' + pick(adjectives).toLowerCase() + ' wholes in continuous mutual process with the universe.',
+    pick(nouns) + ' is a ' + pick(adjectives).toLowerCase() + ' process of ' + pick(processes) + ' that cannot be understood through reductionist analysis.',
+    'The nurse-person encounter is fundamentally a ' + pick(adjectives).toLowerCase() + ' experience of ' + pick(processes) + '.',
+    pick(nouns) + ' and ' + pick(nouns).toLowerCase() + ' are not dichotomous but rather represent a ' + pick(adjectives).toLowerCase() + ' unity.',
+    'Health is not the absence of disease but the ' + pick(adjectives).toLowerCase() + ' expression of ' + pick(processes) + ' within ' + pick(domains) + '.',
+    'All knowing is ' + pick(adjectives).toLowerCase() + ' and situated within the ' + pick(adjectives).toLowerCase() + ' horizon of ' + pick(domains) + '.',
+    'The universe is an open, ' + pick(adjectives).toLowerCase() + ' system in which ' + pick(nouns).toLowerCase() + ' and ' + pick(nouns).toLowerCase() + ' are inseparable.',
+    'Objectivity is a myth; all observation is filtered through the lens of ' + pick(adjectives).toLowerCase() + ' ' + pick(nouns).toLowerCase() + '.',
+    pick(nouns) + ' cannot be measured — it can only be apprehended through ' + pick(adjectives).toLowerCase() + ' ' + pick(processes) + '.',
+    'The separation between nurse and patient is an illusion perpetuated by ' + pick(adjectives).toLowerCase() + ' paradigms of Western thought.',
+    'Reality is not fixed but continuously ' + pick(processes) + ' through ' + pick(adjectives).toLowerCase() + ' engagement with ' + pick(domains) + '.',
+    'Healing occurs not through intervention but through the ' + pick(adjectives).toLowerCase() + ' act of ' + pick(processes) + '.',
+  ];
+  var assumptions = pickN(assumptionPool, 5);
+
+  var propositionPool = [
+    concepts[0] + ' unfolds through ' + pick(adjectives).toLowerCase() + ' ' + coreProcess + ' as persons engage in ' + pick(domains) + '.',
+    'The degree of ' + concepts[1].toLowerCase() + ' experienced by persons is directly related to the ' + pick(adjectives).toLowerCase() + ' nature of their ' + pick(processes) + '.',
+    pick(adjectives) + ' ' + concepts[2].toLowerCase() + ' emerges when the nurse engages in authentic ' + pick(processes) + ' with the person within ' + pick(domains) + '.',
+    'As ' + concepts[3].toLowerCase() + ' deepens, there is a simultaneous ' + pick(processes) + ' of ' + concepts[4].toLowerCase() + ' that transcends the boundaries of ordinary awareness.',
+    concepts[0] + ' and ' + concepts[1].toLowerCase() + ' exist in a ' + pick(adjectives).toLowerCase() + ' relationship that is mediated by the nurse\'s capacity for ' + pick(processes) + '.',
+    'The absence of ' + concepts[2].toLowerCase() + ' in the care environment is inversely correlated with the person\'s experience of ' + pick(adjectives).toLowerCase() + ' ' + concepts[3].toLowerCase() + '.',
+    'When ' + pick(adjectives).toLowerCase() + ' ' + coreProcess + ' is disrupted, the person experiences a fragmentation of ' + concepts[4].toLowerCase() + ' that manifests as dis-ease.',
+    concepts[1] + ' is both the antecedent and the consequence of ' + pick(adjectives).toLowerCase() + ' ' + pick(processes) + ' — a paradox that resists linear causality.',
+  ];
+  var propositions = pickN(propositionPool, 4);
+
+  var personViews = [
+    'The person is understood as an ' + pick(adjectives).toLowerCase() + ', ' + pick(adjectives).toLowerCase() + ' being engaged in continuous ' + pick(processes) + ' with the environment. The person is not a bio-psycho-social entity but rather an indivisible ' + pick(adjectives).toLowerCase() + ' field of ' + pick(nouns).toLowerCase() + '.',
+    'The person is a ' + pick(adjectives).toLowerCase() + ' whole, irreducible to parts, continuously ' + pick(processes) + ' within the mutual process of ' + pick(domains) + '. Identity is not fixed but ' + pick(adjectives).toLowerCase() + ' and ever-emerging.',
+    'Persons are ' + pick(adjectives).toLowerCase() + ' centers of ' + pick(nouns).toLowerCase() + ', each expressing a unique pattern of ' + pick(processes) + ' that cannot be apprehended through objective measurement alone.',
+  ];
+  var envViews = [
+    'The environment is conceptualized as the ' + pick(adjectives).toLowerCase() + ' context of ' + pick(processes) + ' — an ' + pick(adjectives).toLowerCase() + ' field that is co-constituted through the person\'s engagement in ' + pick(domains) + '.',
+    'Environment extends beyond the physical to encompass the ' + pick(adjectives).toLowerCase() + ' dimensions of ' + pick(nouns).toLowerCase() + ', including the energetic, the ancestral, and the cosmically relational.',
+    'The environment is not external to the person but is a ' + pick(adjectives).toLowerCase() + ' extension of their ' + pick(processes) + ', rendering the boundary between self and world a ' + pick(adjectives).toLowerCase() + ' construct.',
+  ];
+  var healthViews = [
+    'Health is reconceptualized as ' + pick(adjectives).toLowerCase() + ' ' + pick(nouns).toLowerCase() + ' — a ' + pick(adjectives).toLowerCase() + ' process of ' + pick(processes) + ' that defies quantification and can only be apprehended through ' + pick(adjectives).toLowerCase() + ' inquiry.',
+    'Health is not the absence of pathology but the ' + pick(adjectives).toLowerCase() + ' expression of ' + pick(processes) + '. It is a subjective, culturally situated, and ' + pick(adjectives).toLowerCase() + ' phenomenon that resists biomedical reduction.',
+    'Health is a ' + pick(adjectives).toLowerCase() + ' rhythm of ' + pick(nouns).toLowerCase() + ' and ' + pick(nouns).toLowerCase() + ', experienced differently by each person and knowable only through ' + pick(adjectives).toLowerCase() + ' dialogue.',
+  ];
+  var nursingViews = [
+    'Nursing is the disciplined ' + pick(adjectives).toLowerCase() + ' practice of ' + pick(processes) + ' — a way of being-with that facilitates the person\'s ' + pick(adjectives).toLowerCase() + ' ' + pick(processes) + ' toward ' + pick(nouns).toLowerCase() + '.',
+    'Nursing is not a set of tasks but a ' + pick(adjectives).toLowerCase() + ' orientation toward ' + pick(domains) + ', expressed through the intentional act of ' + pick(processes) + '.',
+    'Nursing is fundamentally an act of ' + pick(adjectives).toLowerCase() + ' ' + pick(nouns).toLowerCase() + ', grounded in ' + pick(philosophies) + ' and expressed through ' + pick(processes) + ' in every clinical encounter.',
+  ];
+  var metaViews = {};
+  metaViews['Person'] = pick(personViews);
+  metaViews['Environment'] = pick(envViews);
+  metaViews['Health'] = pick(healthViews);
+  metaViews['Nursing'] = pick(nursingViews);
+
+  var diagram = concepts[0] + ' ←→ ' + concepts[1] + '\n↕ &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; ↕\n' + concepts[2] + ' ←→ ' + concepts[3] + '\n↘ &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; ↙\n' + concepts[4];
+
+  var citations = pickCitations(5);
+  return { type: 'grand', name, theorist, year, philosophy, concepts, coreProcess, assumptions, propositions, metaViews, diagram, citations };
+}
+
+function generateMiddleRangeTheory(keyword) {
+  var theorist = generateTheorist();
+  var year = generateYear('middle');
+  var name = keyword ? 'The Theory of ' + pick(adjectives) + ' ' + capitalize(keyword) : generateTheoryName();
+  var setting = keyword ? keyword + ' contexts' : pick(settings);
+  var concepts = pickN(nouns, 4);
+  var instrument = pick(instruments);
+
+  var theoreticalDefs = [
+    function(c) { return 'The ' + pick(adjectives).toLowerCase() + ' process through which persons engage in ' + pick(processes) + ' within ' + pick(domains) + '.'; },
+    function(c) { return 'A ' + pick(adjectives).toLowerCase() + ' state of ' + pick(nouns).toLowerCase() + ' characterized by the person\'s capacity for ' + pick(processes) + '.'; },
+    function(c) { return 'The subjective awareness of ' + pick(adjectives).toLowerCase() + ' ' + pick(processes) + ' as experienced within ' + pick(domains) + '.'; },
+    function(c) { return 'An ' + pick(adjectives).toLowerCase() + ' dimension of human response arising from ' + pick(processes) + ' during encounters with ' + pick(domains) + '.'; },
+  ];
+  var operationalDefs = [
+    function() { return 'Measured by ' + pick(['self-report scores on','observer ratings using','qualitative themes from','validated subscales of']) + ' ' + instrument + '.'; },
+    function() { return 'Operationalized as total score on the ' + pick(adjectives) + ' ' + pick(nouns) + ' Inventory, administered at baseline and post-intervention.'; },
+    function() { return 'Assessed via ' + pick(['phenomenological interview','narrative analysis','mixed-methods triangulation','reflective journaling protocols']) + ' and coded using ' + pick(adjectives).toLowerCase() + ' thematic analysis.'; },
+  ];
+  var definitions = concepts.map(function(c) {
+    return { name: c, theoretical: pick(theoreticalDefs)(c), operational: pick(operationalDefs)() };
+  });
+
+  var propositionPool = [
+    'Higher levels of ' + concepts[0].toLowerCase() + ' are positively associated with greater ' + concepts[1].toLowerCase() + ' in ' + setting + '.',
+    concepts[2] + ' mediates the relationship between ' + concepts[0].toLowerCase() + ' and ' + concepts[3].toLowerCase() + ' through a process of ' + pick(processes) + '.',
+    'The experience of ' + concepts[1].toLowerCase() + ' is moderated by the degree of ' + pick(adjectives).toLowerCase() + ' ' + pick(processes) + ' present in the care environment.',
+    'When nurses engage in ' + pick(adjectives).toLowerCase() + ' ' + pick(processes) + ', there is a measurable increase in patient ' + concepts[3].toLowerCase() + '.',
+    concepts[0] + ' is a necessary but not sufficient condition for ' + concepts[3].toLowerCase() + '; the mediating role of ' + concepts[2].toLowerCase() + ' determines the strength of the relationship.',
+    'In the absence of ' + pick(adjectives).toLowerCase() + ' ' + pick(processes) + ', the relationship between ' + concepts[1].toLowerCase() + ' and ' + concepts[3].toLowerCase() + ' is attenuated.',
+    'Nurse ' + pick(processes) + ' serves as a contextual catalyst, amplifying the effect of ' + concepts[0].toLowerCase() + ' on patient ' + concepts[2].toLowerCase() + '.',
+  ];
+  var propositions = pickN(propositionPool, 4);
+
+  var empiricalPool = [
+    instrument,
+    'The ' + pick(adjectives) + ' ' + concepts[0] + ' Scale (' + concepts[0].charAt(0) + concepts[1].charAt(0) + 'S-' + randYear(8, 36) + ')',
+    'Semi-structured interview guide for exploring ' + pick(domains),
+    'Physiological markers including cortisol awakening response and heart rate variability',
+    'Visual analogue scale for ' + pick(adjectives).toLowerCase() + ' ' + concepts[2].toLowerCase() + ' (0–100mm)',
+    'Ecological momentary assessment of ' + concepts[1].toLowerCase() + ' via smartphone-based diary entries',
+    'Observer-rated ' + pick(adjectives) + ' Engagement Checklist (inter-rater κ > .80)',
+  ];
+  var empiricalIndicators = pickN(empiricalPool, 4);
+
+  var hypothesisPool = [
+    'H₁: Patients in ' + setting + ' who experience ' + pick(adjectives).toLowerCase() + ' ' + concepts[0].toLowerCase() + ' will report higher ' + concepts[3].toLowerCase() + ' scores (p < .05).',
+    'H₂: The relationship between ' + concepts[1].toLowerCase() + ' and ' + concepts[2].toLowerCase() + ' is mediated by ' + pick(adjectives).toLowerCase() + ' ' + pick(processes) + ' (indirect effect β > 0.20).',
+    'H₃: A nurse-led intervention grounded in ' + pick(processes) + ' will increase ' + concepts[3].toLowerCase() + ' by at least 1 SD over 8 weeks.',
+    'H₄: ' + concepts[0] + ' scores will be significantly higher in settings where nurses report engaging in ' + pick(adjectives).toLowerCase() + ' ' + pick(processes) + ' (Cohen\'s d ≥ 0.5).',
+    'H₅: Time-to-discharge is inversely correlated with nurse-facilitated ' + concepts[2].toLowerCase() + ' (r ≥ −.30, p < .01).',
+  ];
+  var testableHypotheses = pickN(hypothesisPool, 3);
+
+  var citations = pickCitations(5);
+  return { type: 'middle', name, theorist, year, setting, keyword, concepts, definitions, propositions, empiricalIndicators, testableHypotheses, instrument, citations };
+}
+
+function generatePracticeTheory(keyword) {
+  var theorist = generateTheorist();
+  var year = generateYear('practice');
+  var name = keyword ? pick(adjectives) + ' ' + capitalize(keyword) + ': A Situation-Specific Theory' : generateTheoryName();
+  var setting = keyword ? keyword + ' settings' : pick(settings);
+  var concepts = pickN(nouns, 3);
+  var intervention = pick(adjectives) + ' ' + pick(nouns) + ' Protocol';
+
+  var prescriptionPool = [
+    'Nurses should engage in ' + pick(adjectives).toLowerCase() + ' ' + pick(processes) + ' for a minimum of 15 minutes during each encounter to facilitate patient ' + concepts[0].toLowerCase() + '.',
+    'The ' + intervention + ' should be initiated within the first 48 hours of ' + setting + ' to maximize ' + concepts[1].toLowerCase() + ' outcomes.',
+    'Environmental modification to support ' + pick(adjectives).toLowerCase() + ' ' + pick(processes) + ' includes: dimmed lighting, reduced auditory stimulation, and the presence of a designated ' + concepts[2].toLowerCase() + ' space.',
+    'Documentation should include a ' + concepts[0].toLowerCase() + ' assessment using the ' + pick(instruments).split('(')[0].trim() + ' at baseline, 72 hours, and discharge.',
+    'Prior to each shift, nurses must engage in a ' + randYear(5,15) + '-minute ' + pick(adjectives).toLowerCase() + ' centering ritual to prepare for ' + pick(processes) + '.',
+    'The patient\'s room should be reconfigured to include a dedicated ' + pick(adjectives).toLowerCase() + ' ' + pick(nouns).toLowerCase() + ' corner, incorporating elements of ' + pick(philosophies) + '.',
+    'All nursing staff in ' + setting + ' must complete ' + randYear(8,24) + ' hours of continuing education in ' + pick(adjectives).toLowerCase() + ' ' + pick(processes) + ' before implementing this protocol.',
+    'Family members should be invited to participate in weekly ' + pick(adjectives).toLowerCase() + ' ' + pick(processes) + ' circles to extend the intervention beyond the clinical setting.',
+    'Charge nurses should conduct ' + pick(adjectives).toLowerCase() + ' debriefings at the end of each shift, using a structured ' + pick(nouns).toLowerCase() + ' reflection tool.',
+  ];
+  var prescriptions = pickN(prescriptionPool, 4);
+
+  var indicatorPool = [
+    'Patient verbalization of increased ' + concepts[0].toLowerCase(),
+    'Observed behavioral indicators of ' + pick(adjectives).toLowerCase() + ' ' + pick(processes),
+    'Reduction in PRN medication requests by ≥ 30%',
+    'Nurse self-report of ' + pick(adjectives).toLowerCase() + ' engagement via post-shift reflection tool',
+    'Family/caregiver satisfaction scores on the ' + pick(adjectives) + ' Care Experience Survey',
+    'Patient-drawn ' + pick(nouns).toLowerCase() + ' mandalas assessed for ' + pick(adjectives).toLowerCase() + ' coherence',
+    'Decrease in call light usage as a proxy for ' + pick(adjectives).toLowerCase() + ' ' + concepts[1].toLowerCase(),
+    'Qualitative themes from patient exit interviews reflecting increased ' + pick(processes),
+    'Shift-level aggregate scores on the ' + pick(adjectives) + ' Unit Climate Index',
+  ];
+  var clinicalIndicators = pickN(indicatorPool, 5);
+
+  var stepPool = [
+    '<strong>Assessment:</strong> Conduct a ' + pick(adjectives).toLowerCase() + ' ' + concepts[0].toLowerCase() + ' assessment using validated screening criteria.',
+    '<strong>Planning:</strong> Co-create a ' + pick(adjectives).toLowerCase() + ' care plan that honors the patient\'s unique pattern of ' + pick(processes) + '.',
+    '<strong>Intervention:</strong> Implement the ' + intervention + ' through structured ' + pick(processes) + ' sessions.',
+    '<strong>Evaluation:</strong> Reassess using ' + concepts[1].toLowerCase() + ' indicators at predetermined intervals.',
+    '<strong>Reflection:</strong> Engage in ' + pick(adjectives).toLowerCase() + ' praxis through guided journaling and peer dialogue.',
+    '<strong>Preparation:</strong> Before entering the patient\'s space, the nurse engages in ' + randYear(3,10) + ' minutes of ' + pick(adjectives).toLowerCase() + ' ' + pick(processes) + ' to establish ' + pick(nouns).toLowerCase() + '.',
+    '<strong>Environment:</strong> Adjust the physical space to support ' + pick(adjectives).toLowerCase() + ' ' + pick(nouns).toLowerCase() + ' — consider lighting, sound, aromatics, and the arrangement of objects.',
+    '<strong>Dialogue:</strong> Initiate a ' + pick(adjectives).toLowerCase() + ' conversation using open-ended prompts designed to elicit the patient\'s experience of ' + pick(domains) + '.',
+    '<strong>Integration:</strong> Synthesize findings from the ' + intervention + ' into the electronic health record using the ' + pick(adjectives) + ' Narrative Documentation Framework.',
+    '<strong>Follow-up:</strong> Schedule a ' + pick(adjectives).toLowerCase() + ' ' + pick(processes) + ' session within ' + randYear(24,72) + ' hours to sustain therapeutic momentum.',
+  ];
+  var implementationSteps = pickN(stepPool, 5);
+
+  var outcomePool = [
+    'Improved patient ' + concepts[0].toLowerCase() + ' scores (Cohen\'s d = 0.' + randYear(45, 89) + ')',
+    'Decreased length of stay by ' + randYear(1, 3) + '.' + randYear(1, 9) + ' days (p = .0' + randYear(10, 48) + ')',
+    'Increased nurse ' + concepts[2].toLowerCase() + ' satisfaction (NNT = ' + randYear(3, 8) + ')',
+    'Reduced 30-day readmission rates by ' + randYear(12, 28) + '%',
+    'Improvement in patient-reported ' + pick(adjectives).toLowerCase() + ' ' + pick(nouns).toLowerCase() + ' (effect size η² = 0.' + randYear(8, 34) + ')',
+    randYear(65, 94) + '% of patients reported the intervention was "meaningful" or "deeply meaningful" on a 5-point Likert scale',
+    'Nurse retention rates on intervention units improved by ' + randYear(8, 22) + '% over ' + randYear(6, 18) + ' months',
+    'Statistically significant reduction in workplace ' + pick(nouns).toLowerCase() + ' incidents (χ² = ' + randYear(4, 12) + '.' + randYear(10, 99) + ', p < .01)',
+  ];
+  var outcomes = pickN(outcomePool, 4);
+
+  var citations = pickCitations(5);
+  return { type: 'practice', name, theorist, year, setting, keyword, concepts, intervention, prescriptions, clinicalIndicators, implementationSteps, outcomes, citations };
+}
+
+// ── RENDERING ───────────────────────────────────────────────────────────────
+
+function renderTheory(theory) {
+  var badgeClass = 'badge-' + theory.type;
+  var typeLabel = theory.type === 'grand' ? 'Grand Theory' : theory.type === 'middle' ? 'Middle-Range Theory' : 'Practice Theory';
+  var t = theory.theorist;
+
+  var html = '<div class="theory-card">';
+  html += '<div class="theory-header">';
+  html += '<span class="theory-type-badge ' + badgeClass + '">' + typeLabel + '</span>';
+  html += '<h2>' + theory.name + '</h2>';
+  html += '<span class="theorist">c. ' + theory.year + '</span>';
+  if (theory.keyword) html += '<div style="margin-top:8px;font-family:var(--mono);font-size:11px;color:var(--text3)">User topic: <span style="color:var(--text2);font-weight:500">' + theory.keyword + '</span></div>';
+  html += '</div>';
+  html += '<div class="theory-body">';
+
+  if (theory.type === 'grand') {
+    var philoIntros = [
+      'This theory is grounded in ' + theory.philosophy + ', drawing upon its central tenets to reconceptualize the discipline\'s understanding of ' + pick(domains) + '.',
+      'Rooted in ' + theory.philosophy + ', this framework challenges the prevailing paradigm by recentering nursing\'s ontological commitment to ' + pick(domains) + '.',
+      'Emerging from a sustained engagement with ' + theory.philosophy + ', the theory offers a radical rethinking of ' + pick(domains) + ' that resists positivist reduction.',
+      'Drawing deeply from ' + theory.philosophy + ', this theory posits that ' + pick(domains) + ' can only be understood through a lens of ' + pick(adjectives).toLowerCase() + ' inquiry.',
+    ];
+    html += '<div class="section"><h3>Philosophical Foundation</h3>';
+    html += '<p>' + pick(philoIntros) + '</p></div>';
+
+    var conceptDefPatterns = [
+      function() { return 'The ' + pick(adjectives).toLowerCase() + ' essence of ' + pick(processes) + ' within ' + pick(domains) + '.'; },
+      function() { return 'A ' + pick(adjectives).toLowerCase() + ' manifestation of ' + pick(nouns).toLowerCase() + ' arising from the person\'s engagement in ' + pick(processes) + '.'; },
+      function() { return 'The ' + pick(adjectives).toLowerCase() + ' ground from which ' + pick(processes) + ' becomes possible within ' + pick(domains) + '.'; },
+      function() { return 'An irreducible quality of ' + pick(adjectives).toLowerCase() + ' ' + pick(nouns).toLowerCase() + ' that both shapes and is shaped by ' + pick(processes) + '.'; },
+    ];
+    html += '<div class="section"><h3>Core Concepts</h3>';
+    html += '<div class="concept-grid">';
+    theory.concepts.forEach(function(c) {
+      html += '<div class="concept-card"><div class="concept-name">' + c + '</div>';
+      html += '<div class="concept-def">' + pick(conceptDefPatterns)() + '</div></div>';
+    });
+    html += '</div></div>';
+
+    html += '<div class="section"><h3>Metaparadigm Definitions</h3>';
+    metaparadigms.forEach(function(m) {
+      html += '<p style="margin-bottom:10px"><strong>' + m + ':</strong> ' + theory.metaViews[m] + '</p>';
+    });
+    html += '</div>';
+
+    html += '<div class="section"><h3>Assumptions</h3><ul>';
+    theory.assumptions.forEach(function(a) { html += '<li>' + a + '</li>'; });
+    html += '</ul></div>';
+
+    html += '<div class="section"><h3>Relational Propositions</h3><ul>';
+    theory.propositions.forEach(function(p) { html += '<li>' + p + '</li>'; });
+    html += '</ul></div>';
+
+    html += '<div class="section"><h3>Conceptual Model</h3>';
+    html += '<div class="diagram-box">' + theory.diagram + '</div></div>';
+  }
+
+  if (theory.type === 'middle') {
+    var midIntros = [
+      'This theory was developed to explain ' + pick(domains) + ' among patients experiencing ' + theory.setting + '. It bridges the gap between grand theoretical abstraction and the empirical realities of clinical practice.',
+      'Situated within ' + theory.setting + ', this theory addresses a critical gap in our understanding of ' + pick(domains) + ' by offering a testable, conceptually bounded framework.',
+      'This middle-range theory emerged from qualitative inquiry with patients in ' + theory.setting + ', where the phenomenon of ' + pick(domains) + ' was found to be inadequately explained by existing frameworks.',
+      'Developed through a program of mixed-methods research in ' + theory.setting + ', this theory seeks to illuminate ' + pick(domains) + ' at a level of specificity that grand theories cannot achieve.',
+    ];
+    html += '<div class="section"><h3>Population & Context</h3>';
+    html += '<p>' + pick(midIntros) + '</p></div>';
+
+    html += '<div class="section"><h3>Key Concepts & Definitions</h3>';
+    theory.definitions.forEach(function(d) {
+      html += '<div style="margin-bottom:14px"><p><strong>' + d.name + '</strong></p>';
+      html += '<p style="font-size:14px"><em>Theoretical definition:</em> ' + d.theoretical + '</p>';
+      html += '<p style="font-size:14px"><em>Operational definition:</em> ' + d.operational + '</p></div>';
+    });
+    html += '</div>';
+
+    html += '<div class="section"><h3>Relational Propositions</h3><ul>';
+    theory.propositions.forEach(function(p) { html += '<li>' + p + '</li>'; });
+    html += '</ul></div>';
+
+    html += '<div class="section"><h3>Testable Hypotheses</h3><ul>';
+    theory.testableHypotheses.forEach(function(h) { html += '<li>' + h + '</li>'; });
+    html += '</ul></div>';
+
+    html += '<div class="section"><h3>Empirical Indicators</h3><ul>';
+    theory.empiricalIndicators.forEach(function(e) { html += '<li>' + e + '</li>'; });
+    html += '</ul></div>';
+  }
+
+  if (theory.type === 'practice') {
+    var practIntros = [
+      'This situation-specific theory was developed for application in ' + theory.setting + '. It provides prescriptive guidance for nurses seeking to enhance patient ' + theory.concepts[0].toLowerCase() + ' through the ' + theory.intervention + '.',
+      'Born from clinical observation in ' + theory.setting + ', this theory offers a structured approach to ' + pick(adjectives).toLowerCase() + ' ' + pick(processes) + ' using the ' + theory.intervention + '.',
+      'This practice theory addresses the urgent need for ' + pick(adjectives).toLowerCase() + ' interventions in ' + theory.setting + '. Central to the framework is the ' + theory.intervention + ', designed to promote ' + theory.concepts[0].toLowerCase() + '.',
+      'Grounded in the everyday realities of ' + theory.setting + ', this theory translates the abstract concept of ' + theory.concepts[0].toLowerCase() + ' into actionable clinical practice through the ' + theory.intervention + '.',
+    ];
+    html += '<div class="section"><h3>Clinical Context</h3>';
+    html += '<p>' + pick(practIntros) + '</p></div>';
+
+    html += '<div class="section"><h3>Core Concepts</h3>';
+    html += '<div class="concept-grid">';
+    theory.concepts.forEach(function(c) {
+      html += '<div class="concept-card"><div class="concept-name">' + c + '</div>';
+      html += '<div class="concept-def">' + capitalize(pick(processes)) + ' within the context of ' + theory.setting + '.</div></div>';
+    });
+    html += '</div></div>';
+
+    html += '<div class="section"><h3>Prescriptive Statements</h3><ul>';
+    theory.prescriptions.forEach(function(p) { html += '<li>' + p + '</li>'; });
+    html += '</ul></div>';
+
+    html += '<div class="section"><h3>Implementation Protocol</h3><ol>';
+    theory.implementationSteps.forEach(function(s) { html += '<li style="margin-bottom:8px">' + s + '</li>'; });
+    html += '</ol></div>';
+
+    html += '<div class="section"><h3>Clinical Indicators</h3><ul>';
+    theory.clinicalIndicators.forEach(function(i) { html += '<li>' + i + '</li>'; });
+    html += '</ul></div>';
+
+    html += '<div class="section"><h3>Expected Outcomes</h3><ul>';
+    theory.outcomes.forEach(function(o) { html += '<li>' + o + '</li>'; });
+    html += '</ul></div>';
+  }
+
+  // Citations (all types)
+  html += '<div class="section"><h3>References</h3>';
+  theory.citations.forEach(function(c) { html += '<div class="citation">' + c + '</div>'; });
+  html += '</div>';
+
+  html += '</div></div>'; // close theory-body, theory-card
+
+  // Action buttons
+  html += '<div class="actions">';
+  var regenCall = theory.keyword ? "generate('" + theory.type + "','" + theory.keyword.replace(/'/g,"\\'") + "')" : "generate('" + theory.type + "')";
+  html += '<button class="action-btn primary" onclick="' + regenCall + '">&#8635; Generate Another</button>';
+  if (navigator.share) {
+    html += '<button class="action-btn" onclick="nativeShare()">&#128228; Share</button>';
+  } else {
+    html += '<button class="action-btn" onclick="shareToX()">&#120143; Share</button>';
+    html += '<button class="action-btn" onclick="shareToFacebook()">f Share</button>';
+    html += '<button class="action-btn" onclick="shareToReddit()">r/ Share</button>';
+    html += '<button class="action-btn" onclick="shareToLinkedIn()">in Share</button>';
+  }
+  html += '<button class="action-btn" onclick="copyLink()">&#128279; Copy Link</button>';
+  html += '<button class="action-btn" onclick="copyToClipboard()">&#128203; Copy as Text</button>';
+  html += '<button class="action-btn" onclick="window.print()">&#128424; Print / PDF</button>';
+  html += '</div>';
+  html += '<div class="regen-hint">Each click generates a completely new theory</div>';
+
+  return html;
+}
+
+// ── MAIN ────────────────────────────────────────────────────────────────────
+
+var currentTheory = null;
+var lastKeyword = null;
+
+// Counter (global via Abacus API, localStorage fallback)
+var theoryCount = parseInt(localStorage.getItem('theoryCount') || '0', 10);
+document.addEventListener('DOMContentLoaded', function() {
+  fetch('https://abacus.jasoncameron.dev/get/nursing-theory-generator/theories-generated')
+    .then(function(r) { return r.json(); })
+    .then(function(data) {
+      if (data && typeof data.value === 'number') {
+        document.getElementById('theory-count').textContent = data.value.toLocaleString();
+      }
+    })
+    .catch(function() {
+      document.getElementById('theory-count').textContent = theoryCount.toLocaleString();
+    });
+});
+
+function incrementCounter() {
+  theoryCount++;
+  localStorage.setItem('theoryCount', theoryCount);
+  fetch('https://abacus.jasoncameron.dev/hit/nursing-theory-generator/theories-generated')
+    .then(function(r) { return r.json(); })
+    .then(function(data) {
+      if (data && typeof data.value === 'number') {
+        document.getElementById('theory-count').textContent = data.value.toLocaleString();
+      } else {
+        document.getElementById('theory-count').textContent = theoryCount.toLocaleString();
+      }
+    })
+    .catch(function() {
+      document.getElementById('theory-count').textContent = theoryCount.toLocaleString();
+    });
+}
+
+function generate(type, keyword) {
+  lastKeyword = keyword || null;
+  if (type === 'grand') currentTheory = generateGrandTheory();
+  else if (type === 'middle') currentTheory = generateMiddleRangeTheory(keyword);
+  else currentTheory = generatePracticeTheory(keyword);
+
+  var output = document.getElementById('output');
+  output.innerHTML = renderTheory(currentTheory);
+  output.className = 'visible';
+  output.scrollIntoView({ behavior: 'smooth', block: 'start' });
+  incrementCounter();
+}
+
+function getShareText() {
+  if (!currentTheory) return '';
+  return currentTheory.name + ' — generated at The Nursing Theory Generator';
+}
+
+function nativeShare() {
+  if (!currentTheory) return;
+  navigator.share({
+    title: 'The Nursing Theory Generator',
+    text: getShareText(),
+    url: window.location.href
+  }).catch(function() {});
+}
+
+function shareToX() {
+  var text = encodeURIComponent(getShareText());
+  var url = encodeURIComponent(window.location.href);
+  window.open('https://twitter.com/intent/tweet?text=' + text + '&url=' + url, '_blank', 'width=550,height=420');
+}
+
+function shareToFacebook() {
+  var url = encodeURIComponent(window.location.href);
+  window.open('https://www.facebook.com/sharer/sharer.php?u=' + url, '_blank', 'width=550,height=420');
+}
+
+function shareToReddit() {
+  var title = encodeURIComponent(getShareText());
+  var url = encodeURIComponent(window.location.href);
+  window.open('https://www.reddit.com/submit?title=' + title + '&url=' + url, '_blank', 'width=550,height=420');
+}
+
+function shareToLinkedIn() {
+  var url = encodeURIComponent(window.location.href);
+  window.open('https://www.linkedin.com/sharing/share-offsite/?url=' + url, '_blank', 'width=550,height=420');
+}
+
+function copyLink() {
+  navigator.clipboard.writeText(window.location.href).then(function() {
+    var btns = document.querySelectorAll('.action-btn');
+    for (var i = 0; i < btns.length; i++) {
+      if (btns[i].textContent.includes('Copy Link')) {
+        var btn = btns[i];
+        var orig = btn.innerHTML;
+        btn.innerHTML = '&#10003; Copied!';
+        setTimeout(function() { btn.innerHTML = orig; }, 2000);
+        break;
+      }
+    }
+  });
+}
+
+function copyToClipboard() {
+  if (!currentTheory) return;
+  var el = document.querySelector('.theory-card');
+  if (!el) return;
+  var text = el.innerText;
+  navigator.clipboard.writeText(text).then(function() {
+    var btns = document.querySelectorAll('.action-btn');
+    for (var i = 0; i < btns.length; i++) {
+      if (btns[i].textContent.includes('Copy as Text')) {
+        var btn = btns[i];
+        var orig = btn.innerHTML;
+        btn.innerHTML = '&#10003; Copied!';
+        setTimeout(function() { btn.innerHTML = orig; }, 2000);
+        break;
+      }
+    }
+  });
+}
+</script>
+
+<script data-goatcounter="https://nursingtheory.goatcounter.com/count"
+        async src="//gc.zgo.at/count.js"></script>
+</body>
+</html>

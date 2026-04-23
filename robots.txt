@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://nursing-theory.net/sitemap.xml
